@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Learning Journal</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/12-7.png" alt="logo" />
+
+      <p>Bayode's Learning Journal</p>
+      <a href="#">Home</a>
+      <a href="about.html">About Me</a>
+    </header>
+    <div class="container">
+      <div class="blog hero">
+        <label for="" class="hero-date">DEC 2, 2022</label>
+        <a href="index.html" class="hero-title"
+          >My journey as a Frontend Developer</a
+        >
+        <p class="hero-discription">
+         With several weeks of learning HTML, CSS, JavaScriptand and React in the Scrimba 
+         learning path, while developing projects, and been open for further collaborations.
+        </p>
+      </div>
+
+      <div class="blog">
+        <img
+          src="images/blog-image-04.png"
+          alt="blog image"
+          class="blog-image"
+        />
+        <label for="" class="blog-date">DEC 3, 2022</label>
+        <h2 class="blog-title">Blog One</h2>
+        <p class="blog-discription">
+          I'm excited to start a new learning journey as a Scrimba 
+          student! After several weeks of learning i was able to build a simple car counter app with JavaScript.
+        </p>
+      </div>
+
+      <div class="blog">
+        <img
+          src="images/scoreboard.png"
+          alt="blog image"
+          class="blog-image"
+        />
+        <label for="" class="blog-date">DEC 4, 2022</label>
+        <h2 class="blog-title">Blog Two</h2>
+        <p class="blog-discription">
+          With further progress on my study path, I was also able to build a simple and 
+          functional basket ball game digital counter with JavaScript.
+        </p>
+      </div>
+
+      <div class="blog">
+        <img
+          src="images/password.png"
+          alt="blog image"
+          class="blog-image"
+        />
+        <label for="" class="blog-date">DEC 5, 2022</label>
+        <h2 class="blog-title">Blog Three</h2>
+        <p class="blog-discription">
+          with excitment going forward i was able to furthert learn more, and build projects 
+          with a Random Password Generator App.
+        </p>
+      </div>
+
+      <div class="blog hidden">
+        <img
+          src="images/blog-image-05.png"
+          alt="blog image"
+          class="blog-image"
+        />
+        <label for="" class="blog-date">DEC 5, 2022</label>
+        <h2 class="blog-title">Blog Four</h2>
+        <p class="blog-discription">
+          Tasked with a desire to develop and build a Chrome Extension for a rewarding web browser 
+          experience and book marking on frequently visitied website. 
+        </p>
+      </div>
+
+      <div class="blog hidden">
+        <img
+          src="images/blog-image-01.png"
+          alt="blog image"
+          class="blog-image"
+        />
+        <label for="" class="blog-date">DEC 5, 2022</label>
+        <h2 class="blog-title">Blog Five</h2>
+        <p class="blog-discription">
+          Going forward in my learning experience, i was able to develop a simple Blackjact
+          game with JavaScript.
+        </p>
+      </div>
+
+      <div class="blog hidden">
+        <img
+          src="images/blog-image-02.png"
+          alt="blog image"
+          class="blog-image"
+        />
+        <label for="" class="blog-date">DEC 5, 2022</label>
+        <h2 class="blog-title">Blog Six</h2>
+        <p class="blog-discription">
+          With a need to strongly improve my CSS and HTML skills, i was tasked with learning 
+          Responsive Web Design, to see how best this brings about a clear and concise web platform.
+        </p>
+      </div>
+
+      <p class="read-more">View More</p>
+
+      <footer>
+        <p>Bayode's Learning Journal</p>
+        <label>Copyright ©2022</label>
+      </footer>
+    </div>
+
+    <script>
+      const readMore = document.querySelector(".read-more");
+      const hiddenBlogs = document.querySelectorAll(".hidden");
+      readMore.addEventListener("click", () => {
+        hiddenBlogs.forEach((blog) => {
+          blog.classList.remove("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
